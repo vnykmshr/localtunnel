@@ -6,22 +6,22 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/localtunnel/localtunnel.git"
+    "url": "git://github.com/vnykmshr/localtunnel.git"
   },
   "dependencies": {
-    "request": "2.81.0",
-    "yargs": "3.29.0",
-    "debug": "2.6.8",
-    "openurl": "1.1.1"
+    "debug": "^3.1.0",
+    "openurl": "1.1.1",
+    "request": "^2.83.0",
+    "yargs": "^10.0.3"
   },
   "devDependencies": {
-    "mocha": "~1.17.0"
+    "mocha": "^4.0.1"
   },
   "scripts": {
     "test": "mocha --ui qunit --reporter list --timeout 10000 -- test/index.js"
   },
   "bin": {
-    "lt": "./bin/client"
+    "localtunnel": "./bin/client"
   },
   "main": "./client.js"
 }
